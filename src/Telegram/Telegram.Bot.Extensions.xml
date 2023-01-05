@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telegram.Bot.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:Telegram.Bot.Types.BotApiToken.Regex">
+            <remarks>
+            Pattern explanation:<br/>
+            <code>
+            ○ "BotId" capture group.<br/>
+                ○ Match '0' through '9' exactly 10 times.<br/>
+            ○ Match ':'.<br/>
+            ○ Match a character in the set [-0-9A-Z_a-z\u212A] exactly 35 times.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="P:Telegram.Bot.Types.BotApiToken.Value">
+            <summary>
+            Gets the underlying <see cref="T:System.String" /> value if set, otherwise a <see cref="T:Vogen.ValueObjectValidationException" /> is thrown.
+            </summary>
+        </member>
+        <member name="M:Telegram.Bot.Types.BotApiToken.From(System.String)">
+            <summary>
+            Builds an instance from the provided underlying type.
+            </summary>
+            <param name="value">The underlying type.</param>
+            <returns>An instance of this type.</returns>
+        </member>
+        <member name="M:Telegram.Bot.Types.BotApiToken.ToString">
+            <summary>Returns the string representation of the underlying <see cref="T:System.String" />.</summary>
+            <inheritdoc cref="M:System.String.ToString" />
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TelegramBotDIExtensions.DescribeBotApiToken(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>Adds OpenAPI description for the <see cref="T:Telegram.Bot.Types.BotApiToken" /></summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TelegramBotDIExtensions.DescribeBotApiToken(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Adds OpenAPI description for the <see cref="T:Telegram.Bot.Types.BotApiToken" /></summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Regex_0">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the Regex method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Regex_0.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Utilities">
+            <summary>Helper methods used by generated <see cref="T:System.Text.RegularExpressions.Regex"/>-derived implementations.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout">
+            <summary>Default timeout value set in <see cref="T:System.AppContext"/>, or <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout"/> if none was set.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_hasTimeout">
+            <summary>Whether <see cref="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout"/> is non-infinite.</summary>
+        </member>
+        <member name="T:ThisAssembly">
+            <summary>Provides access to the current assembly information.</summary>
+        </member>
+        <member name="T:ThisAssembly.Git">
+            <summary>Provides access to the git information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirty">
+            <summary>IsDirty: false</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirtyString">
+            <summary>IsDirtyString: false</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.RepositoryUrl">
+            <summary>Repository URL: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Branch">
+            <summary>Branch: main</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commit">
+            <summary>Commit: f6c835f</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Sha">
+            <summary>Sha: f6c835fce67ec9c245857d936ac0f51c82192402</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.CommitDate">
+            <summary>Commit date: 2023-01-04T23:44:29-05:00</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commits">
+            <summary>Commits on top of base version: 1</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Tag">
+            <summary>Tag: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseTag">
+            <summary>Base tag: </summary>
+        </member>
+        <member name="T:ThisAssembly.Git.BaseVersion">
+            <summary>Provides access to the base version information used to determine the <see cref="T:ThisAssembly.Git.SemVer" />.</summary>      
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Patch">
+            <summary>Patch: 0</summary>
+        </member>
+        <member name="T:ThisAssembly.Git.SemVer">
+            <summary>Provides access to SemVer information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Patch">
+            <summary>Patch: 1</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Label">
+            <summary>Label: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.DashLabel">
+            <summary>Label with dash prefix: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Source">
+            <summary>Source: Default</summary>
+        </member>
+    </members>
+</doc>

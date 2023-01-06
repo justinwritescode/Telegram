@@ -12,7 +12,7 @@
 
 namespace Telegram.Identity;
 
-public static class ClaimTypes
+public static partial class ClaimTypes
 {
     /// <summary>The base URI for Telegram - <inheritdoc cref="BaseUri" path="/value/text()" /></summary>
     /// <value>https://telegram.org/</value>

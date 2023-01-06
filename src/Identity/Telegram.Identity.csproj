@@ -14,4 +14,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3</TargetFrameworks>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Security.Claims" />
+  </ItemGroup>
 </Project>

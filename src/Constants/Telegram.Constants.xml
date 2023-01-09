@@ -4,6 +4,70 @@
         <name>Telegram.Constants</name>
     </assembly>
     <members>
+        <member name="F:Telegram.Constants.Account.UsernameMinLength">
+            <summary>The minimum length of a username.</summary>
+            <value>5</value>
+        </member>
+        <member name="F:Telegram.Constants.Account.UsernameMaxLength">
+            <summary>The maximum length of a username.</summary>
+            <value>32</value>
+        </member>
+        <member name="F:Telegram.Constants.Account.GivenNameMinLength">
+            <summary>The minimum length of a given name.</summary>
+            <value>0</value>
+        </member>
+        <member name="F:Telegram.Constants.Account.GivenNameMaxLength">
+            <summary>The maximum length of a given name.</summary>
+            <value>64</value>
+        </member>
+        <member name="F:Telegram.Constants.Account.SurnameMinLength">
+            <summary>The minimum length of a surname.</summary>
+            <value>0</value>
+        </member>
+        <member name="F:Telegram.Constants.Account.SurnameMaxLength">
+            <summary>The maximum length of a surname.</summary>
+            <value><inheritdoc cref="F:Telegram.Constants.Account.GivenNameMaxLength" /></value>
+        </member>
+        <member name="F:Telegram.Constants.GroupsAndChannels.TitleMinLength">
+            <summary>The minimum length of a group title.</summary>
+            <value>5</value>
+        </member>
+        <member name="F:Telegram.Constants.GroupsAndChannels.TitleMaxLength">
+            <summary>The maximum length of a group title.</summary>
+            <value>128</value>
+        </member>
+        <member name="F:Telegram.Constants.GroupsAndChannels.DescriptionMinLength">
+            <summary>The minimum length of a group description.</summary>
+            <value>0</value>
+        </member>
+        <member name="F:Telegram.Constants.GroupsAndChannels.DescriptionMaxLength">
+            <summary>The maximum length of a group description.</summary>
+            <value>255</value>
+        </member>
+        <member name="F:Telegram.Constants.GroupsAndChannels.UsernameMinLength">
+            <summary>The minimum length of a group username.</summary>
+            <value>5</value>
+        </member>
+        <member name="F:Telegram.Constants.GroupsAndChannels.UsernameMaxLength">
+            <summary>The maximum length of a group username.</summary>
+            <value>32</value>
+        </member>
+        <member name="F:Telegram.Constants.Messages.TextMinLength">
+            <summary>The minimum length of a message caption.</summary>
+            <value>0</value>
+        </member>
+        <member name="F:Telegram.Constants.Messages.TextMaxLength">
+            <summary>The maximum length of a message caption.</summary>
+            <value>4096</value>
+        </member>
+        <member name="F:Telegram.Constants.Messages.CaptionMinLength">
+            <summary>The minimum length of a message caption.</summary>
+            <value>0</value>
+        </member>
+        <member name="F:Telegram.Constants.Messages.CaptionMaxLength">
+            <summary>The maximum length of a message caption.</summary>
+            <value>1024</value>
+        </member>
         <member name="T:ThisAssembly">
             <summary>Provides access to the current assembly information.</summary>
         </member>
@@ -23,16 +87,16 @@
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 96f204a</summary>
+            <summary>Commit: 7194bc5</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 96f204aff148ec7bf3ed239ba8b61b2a627ded55</summary>
+            <summary>Sha: 7194bc59ac5cd2bfdaabf5564428473149d3b0cf</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2023-01-06T18:45:26-05:00</summary>
+            <summary>Commit date: 2023-01-08T21:41:16-06:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 4</summary>
+            <summary>Commits on top of base version: 5</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -62,7 +126,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 4</summary>
+            <summary>Patch: 5</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>

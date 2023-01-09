@@ -11,6 +11,7 @@
  */
 
 namespace Telegram.Identity;
+using System.Linq;
 using System.Security.Claims;
 public static class ClaimsPrincipalExtensions
 {

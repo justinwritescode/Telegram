@@ -85,28 +85,28 @@
             <summary>Provides access to the git information for the current assembly.</summary>
         </member>
         <member name="F:ThisAssembly.Git.IsDirty">
-            <summary>IsDirty: false</summary>
+            <summary>IsDirty: true</summary>
         </member>
         <member name="F:ThisAssembly.Git.IsDirtyString">
-            <summary>IsDirtyString: false</summary>
+            <summary>IsDirtyString: true</summary>
         </member>
         <member name="F:ThisAssembly.Git.RepositoryUrl">
-            <summary>Repository URL: </summary>
+            <summary>Repository URL: https://github.com/justinwritescode/Telegram.git</summary>
         </member>
         <member name="F:ThisAssembly.Git.Branch">
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: f6c835f</summary>
+            <summary>Commit: 96f204a</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: f6c835fce67ec9c245857d936ac0f51c82192402</summary>
+            <summary>Sha: 96f204aff148ec7bf3ed239ba8b61b2a627ded55</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2023-01-04T23:44:29-05:00</summary>
+            <summary>Commit date: 2023-01-06T18:45:26-05:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 1</summary>
+            <summary>Commits on top of base version: 4</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -136,7 +136,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 1</summary>
+            <summary>Patch: 4</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>

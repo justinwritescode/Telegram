@@ -95,16 +95,16 @@
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 96f204a</summary>
+            <summary>Commit: 1daf3f7</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 96f204aff148ec7bf3ed239ba8b61b2a627ded55</summary>
+            <summary>Sha: 1daf3f7ef73c4d72b924a88a280afac64832524d</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2023-01-06T18:45:26-05:00</summary>
+            <summary>Commit date: 2023-01-09T13:06:10-06:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 4</summary>
+            <summary>Commits on top of base version: 6</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -134,7 +134,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 4</summary>
+            <summary>Patch: 6</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>

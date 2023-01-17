@@ -4,6 +4,58 @@
         <name>Telegram.Bot.Extensions</name>
     </assembly>
     <members>
+        <member name="T:System.Text.RegularExpressions.Generated.Regex_0">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the Regex method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Regex_0.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Regex_0.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Utilities">
+            <summary>Helper methods used by generated <see cref="T:System.Text.RegularExpressions.Regex"/>-derived implementations.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout">
+            <summary>Default timeout value set in <see cref="T:System.AppContext"/>, or <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout"/> if none was set.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_hasTimeout">
+            <summary>Whether <see cref="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout"/> is non-infinite.</summary>
+        </member>
+        <member name="M:Telegram.Bot.Types.BotApiToken.Regex">
+            <remarks>
+            Pattern explanation:<br/>
+            <code>
+            ○ "BotId" capture group.<br/>
+                ○ Match '0' through '9' exactly 10 times.<br/>
+            ○ Match ':'.<br/>
+            ○ Match a character in the set [-0-9A-Z_a-z\u212A] exactly 35 times.<br/>
+            </code>
+            </remarks>
+        </member>
         <member name="P:Telegram.Bot.Types.BotApiToken.Value">
             <summary>
             Gets the underlying <see cref="T:System.String" /> value if set, otherwise a <see cref="T:Vogen.ValueObjectValidationException" /> is thrown.
@@ -19,6 +71,9 @@
         <member name="M:Telegram.Bot.Types.BotApiToken.ToString">
             <summary>Returns the string representation of the underlying <see cref="T:System.String" />.</summary>
             <inheritdoc cref="M:System.String.ToString" />
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TelegramBotDIExtensions.DescribeBotApiToken(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>Adds OpenAPI description for the <see cref="T:Telegram.Bot.Types.BotApiToken" /></summary>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.TelegramBotDIExtensions.DescribeBotApiToken(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>Adds OpenAPI description for the <see cref="T:Telegram.Bot.Types.BotApiToken" /></summary>
@@ -42,16 +97,16 @@
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 411b51d</summary>
+            <summary>Commit: 74283e0</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 411b51dcf1eccbb7c15fb29db208a75ad272e7cc</summary>
+            <summary>Sha: 74283e0187f7edd23145ff88211f4149c33cbc16</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2023-01-16T23:33:56-05:00</summary>
+            <summary>Commit date: 2023-01-17T00:15:07-05:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 8</summary>
+            <summary>Commits on top of base version: 12</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -81,7 +136,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 8</summary>
+            <summary>Patch: 12</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>

@@ -1,9 +1,28 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Telegram.JsonConverters</name>
+        <name>Telegram.Bot.Extensions</name>
     </assembly>
     <members>
+        <member name="P:Telegram.Bot.Types.BotApiToken.Value">
+            <summary>
+            Gets the underlying <see cref="T:System.String" /> value if set, otherwise a <see cref="T:Vogen.ValueObjectValidationException" /> is thrown.
+            </summary>
+        </member>
+        <member name="M:Telegram.Bot.Types.BotApiToken.From(System.String)">
+            <summary>
+            Builds an instance from the provided underlying type.
+            </summary>
+            <param name="value">The underlying type.</param>
+            <returns>An instance of this type.</returns>
+        </member>
+        <member name="M:Telegram.Bot.Types.BotApiToken.ToString">
+            <summary>Returns the string representation of the underlying <see cref="T:System.String" />.</summary>
+            <inheritdoc cref="M:System.String.ToString" />
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TelegramBotDIExtensions.DescribeBotApiToken(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Adds OpenAPI description for the <see cref="T:Telegram.Bot.Types.BotApiToken" /></summary>
+        </member>
         <member name="T:ThisAssembly">
             <summary>Provides access to the current assembly information.</summary>
         </member>

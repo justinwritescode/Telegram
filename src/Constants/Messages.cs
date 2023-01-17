@@ -14,10 +14,10 @@ namespace Telegram.Constants;
 
 public static class Messages
 {
-    /// <summary>The minimum length of a message caption.</summary>
+    /// <summary>The minimum length of a message text.</summary>
     /// <value>0</value>
     public const int TextMinLength = 1;
-    /// <summary>The maximum length of a message caption.</summary>
+    /// <summary>The maximum length of a message text.</summary>
     /// <value>4096</value>
     public const int TextMaxLength = 4096;
     /// <summary>The minimum length of a message caption.</summary>

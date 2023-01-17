@@ -22,7 +22,7 @@
         </member>
         <member name="F:Telegram.Constants.Account.SurnameMinLength">
             <summary>The minimum length of a surname.</summary>
-            <value>0</value>
+            <value><inheritdoc cref="F:Telegram.Constants.Account.GivenNameMinLength" /></value>
         </member>
         <member name="F:Telegram.Constants.Account.SurnameMaxLength">
             <summary>The maximum length of a surname.</summary>
@@ -46,18 +46,18 @@
         </member>
         <member name="F:Telegram.Constants.GroupsAndChannels.UsernameMinLength">
             <summary>The minimum length of a group username.</summary>
-            <value>5</value>
+            <value><inheritdoc cref="F:Telegram.Constants.Account.UsernameMinLength" /></value>
         </member>
         <member name="F:Telegram.Constants.GroupsAndChannels.UsernameMaxLength">
             <summary>The maximum length of a group username.</summary>
-            <value>32</value>
+            <value><inheritdoc cref="F:Telegram.Constants.Account.UsernameMaxLength" /></value>
         </member>
         <member name="F:Telegram.Constants.Messages.TextMinLength">
-            <summary>The minimum length of a message caption.</summary>
+            <summary>The minimum length of a message text.</summary>
             <value>0</value>
         </member>
         <member name="F:Telegram.Constants.Messages.TextMaxLength">
-            <summary>The maximum length of a message caption.</summary>
+            <summary>The maximum length of a message text.</summary>
             <value>4096</value>
         </member>
         <member name="F:Telegram.Constants.Messages.CaptionMinLength">
@@ -87,16 +87,16 @@
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 06f2a0b</summary>
+            <summary>Commit: e69de6e</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 06f2a0bce6ac25fb1283d2f67f2669d3b1535fe7</summary>
+            <summary>Sha: e69de6e68a5b2b181fb785daadb2bf70c4f03f58</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2023-01-17T00:39:09-05:00</summary>
+            <summary>Commit date: 2023-01-17T00:43:15-05:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 18</summary>
+            <summary>Commits on top of base version: 23</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -126,7 +126,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 18</summary>
+            <summary>Patch: 23</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>

@@ -14,6 +14,7 @@
   <Sdk Name="MetapackageSdk" />
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <IsAtRoot>true</IsAtRoot>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="./src/Constants/Telegram.Constants.csproj" />

@@ -1,12 +1,12 @@
 is_global = true
 build_property.AssemblyVersion = 1.0.0
-build_property.Authors = Justin Chase;
+build_property.Authors = Justin Chase <justin@justinwritescode.com>
 build_property.Company = JustinWritesCode
 build_property.ContactEmail = 
 build_property.Description = A package for Telegram.Identity
 build_property.FileVersion = 
 build_property.LicenseExpression = 
-build_property.Owners = Justin Chase;
+build_property.Owners = Justin Chase <justin@justinwritescode.com>
 build_property.PackageLicenseExpression = MIT
 build_property.PackageProjectUrl = https://github.com/justinwritescode/Telegram.git
 build_property.PackageTags = justinwritescode
@@ -17,8 +17,8 @@ build_property.TermsOfServiceUrl =
 build_property.Title = Telegram.Identity
 build_property.Version = 1.0.0
 build_property.RootNamespace = Telegram.Identity
-build_property.ProjectDir = /Users/justin/GitHub/justinwritescode/libs/src/Telegram/src/Identity/
+build_property.ProjectDir = /Users/justin/GitHub/justinwritescode/src/Telegram/src/Identity/
 
-[/Users/justin/GitHub/justinwritescode/libs/src/Telegram/src/Identity/Justin Chase]
+[/Users/justin/GitHub/justinwritescode/src/Telegram/src/Identity/Justin Chase]
 build_metadata.Author.Email = justin@justinwritescode.com
 build_metadata.Author.Identity = Justin Chase

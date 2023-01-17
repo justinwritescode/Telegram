@@ -1,7 +1,7 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telegram.Constants", "Telegram.Constants.csproj", "{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0416D39A-6348-467F-A301-F34AE7CCB052}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD153D04-8451-463A-B75C-1E26E716020B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +27,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D} = {0416D39A-6348-467F-A301-F34AE7CCB052}
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D} = {BD153D04-8451-463A-B75C-1E26E716020B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9D29EA52-0C4D-4517-8E93-1A80C68121DE}
+		SolutionGuid = {46993B3E-1357-400D-8273-13FAFEFCC162}
 	EndGlobalSection
 EndGlobal

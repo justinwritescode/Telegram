@@ -1,0 +1,3 @@
+[submodule "src/Telegram.Bot"]
+	path = src/Telegram.Bot
+	url = https://github.com/justinwritescode/Telegram.Bot.git

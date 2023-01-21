@@ -1,0 +1,316 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "info": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "object",
+          "properties": {
+            "channel_data": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "object",
+                  "properties": {
+                    "from": {
+                      "type": "object",
+                      "properties": {
+                        "username": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "first_name": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "last_name": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "is_bot": {
+                          "nullable": true,
+                          "type": "boolean"
+                        },
+                        "is_premium": {
+                          "nullable": true,
+                          "type": "boolean"
+                        },
+                        "language_code": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "caption_entities": {
+                      "nullable": true,
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "url": {
+                            "type": "string"
+                          },
+                          "length": {
+                            "type": "integer"
+                          },
+                          "type": {
+                            "$ref": "/definitions/messageEntityType"
+                          },
+                          "offset": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "length",
+                          "type",
+                          "offset"
+                        ]
+                      }
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "video": {
+                      "type": "object",
+                      "properties": {
+                        "thumb": {
+                          "type": "object",
+                          "properties": {
+                            "width": {
+                              "type": "integer"
+                            },
+                            "height": {
+                              "type": "integer"
+                            },
+                            "file_id": {
+                              "type": "string"
+                            },
+                            "file_unique_id": {
+                              "type": "string"
+                            },
+                            "file_size": {
+                              "type": "integer"
+                            }
+                          }
+                        },
+                        "file_name": {
+                          "type": "string"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "file_unique_id": {
+                          "type": "string"
+                        },
+                        "file_size": {
+                          "type": "integer"
+                        },
+                        "duration": {
+                          "type": "integer"
+                        },
+                        "mime_type": {
+                          "type": "string"
+                        },
+                        "file_id": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "chat": {
+                      "type": "object",
+                      "properties": {
+                        "username": {
+                          "type": "string"
+                        },
+                        "first_name": {
+                          "type": "string"
+                        },
+                        "last_name": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "date": {
+                      "type": "integer"
+                    },
+                    "message_id": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "contact": {},
+                "message_id": {
+                  "type": "integer"
+                },
+                "chat_id": {
+                  "type": "integer"
+                }
+              }
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "service": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bot": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "external_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "last_message": {},
+        "photo": {},
+        "variables": {},
+        "telegram_id": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "date": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "info",
+    "service",
+    "title",
+    "bot",
+    "contact",
+    "date"
+  ],
+"defintions": {
+  "messageEntityType": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "type": "integer"
+      },
+      "length": {
+        "type": "integer"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "user": {
+        "$ref": "/definitions/user"
+      },
+      "language": {
+        "type": "string"
+      }
+    }
+  },
+  "user": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "is_bot": {
+        "nullable": true,
+        "type": "boolean"
+      },
+      "first_name": {
+        "nullable": true,
+        "type": "string"
+      },
+      "last_name": {
+        "nullable": true,
+        "type": "string"
+      },
+      "username": {
+        "nullable": true,
+        "type": "string"
+      },
+      "language_code": {
+        "nullable": true,
+        "type": "string"
+      },
+      "can_join_groups": {
+        "nullable": true,
+        "type": "boolean"
+      },
+      "can_read_all_group_messages": {
+        "nullable": true,
+        "type": "boolean"
+      },
+      "supports_inline_queries": {
+        "nullable": true,
+        "type": "boolean"
+      }
+    }
+  },
+  "entityType": {
+    "type": "string",
+    "enum": [
+      "bold",
+      "bot_command",
+      "cashtag",
+      "code",
+      "custom_emoji",
+      "email",
+      "hashtag",
+      "italic",
+      "mention",
+      "phone_number",
+      "pre",
+      "spoiler",
+      "strikethrough",
+      "text_link",
+      "text_mention",
+      "underline",
+      "url"
+    ]
+  }
+}
+}

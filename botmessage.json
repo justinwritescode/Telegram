@@ -1,0 +1,92 @@
+[
+  {
+    "info": {
+      "message": {
+        "channel_data": {
+          "message": {
+            "date": 1674209092,
+            "video": {
+              "thumb": {
+                "width": 320,
+                "height": 320,
+                "file_id": "AAMCAQADGQEAAkLtY8pnREPlJlqIBriYm-Z90ZPvQ5EAAkMCAAKAO1hGESElk6R7N6gBAAdtAAMtBA",
+                "file_unique_id": "AQADQwIAAoA7WEZy",
+                "file_size": 26200
+              },
+              "file_name": "IMG_9417.MOV",
+              "height": 1920,
+              "width": 1920,
+              "file_unique_id": "AgADQwIAAoA7WEY",
+              "file_size": 1509479,
+              "duration": 3,
+              "mime_type": "video/mp4",
+              "file_id": "BAACAgEAAxkBAAJC7WPKZ0RD5SZaiAa4mJvmfdGT70ORAAJDAgACgDtYRhEhJZOkezeoLQQ"
+            },
+            "from": {
+              "username": "justhorny32",
+              "first_name": "Justin",
+              "last_name": "Chase",
+              "is_bot": false,
+              "is_premium": true,
+              "language_code": "en",
+              "id": 1018982396
+            },
+            "message_id": 17133,
+            "chat": {
+              "username": "justhorny32",
+              "first_name": "Justin",
+              "last_name": "Chase",
+              "type": "private",
+              "id": 1018982396
+            }
+          },
+          "contact": null,
+          "message_id": 17133,
+          "chat_id": 1018982396
+        },
+        "id": "63ca67444ea7120e423d1954"
+      }
+    },
+    "service": "telegram",
+    "title": "incoming_message",
+    "bot": {
+      "url": "https://t.me/BackroomSupport2Bot",
+      "external_id": "5611963278",
+      "id": "63023d314c7fa57fa00f7876",
+      "name": "Backroom Support Bot²"
+    },
+    "contact": {
+      "username": "justhorny32",
+      "name": "ᒍᑌᔑᎢᏆᑎ ᑕᕼᗩᔑᗴ",
+      "tags": [
+        "🍑 Size Queens: ASS! Participant"
+      ],
+      "last_message": null,
+      "photo": null,
+      "variables": {
+        "my_issue": "Nope! You’re a fucking moron!",
+        "name": "Justin",
+        "media_caption": "https://www.google.com",
+        "group_or_channel": "💪🏻 Muscles! Chanl",
+        "may_we_identify_you_with_your_submitted_content": 1,
+        "Whitelist Site URL": "https://www.foo.com",
+        "username_for_check": "justhorny32",
+        "contestant_telegram_username": "https://www.google.com",
+        "contest_id": 2,
+        "Whitelist Site Purpose": "Zoom Room Permalink",
+        "media_url": "https://www.google.com",
+        "Group or Channel": "The Backroom (grp) ☣",
+        "contestant_id": 49,
+        "is_expecting_a_video_or_file": 0,
+        "problem": "#SUGGESTION #REQUEST",
+        "content_caption": "No caption",
+        "last_name_for_check": "ᑕᕼᗩᔑᗴ",
+        "contestant_display_name": "https://www.google.com",
+        "then_what": "request_unmute"
+      },
+      "telegram_id": "1018982396",
+      "id": "63023d49d48a703beb59ca3b"
+    },
+    "date": 1674209092
+  }
+]

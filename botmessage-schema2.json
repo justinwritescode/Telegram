@@ -14,36 +14,7 @@
                   "type": "object",
                   "properties": {
                     "from": {
-                      "type": "object",
-                      "properties": {
-                        "username": {
-                          "nullable": true,
-                          "type": "string"
-                        },
-                        "first_name": {
-                          "nullable": true,
-                          "type": "string"
-                        },
-                        "last_name": {
-                          "nullable": true,
-                          "type": "string"
-                        },
-                        "is_bot": {
-                          "nullable": true,
-                          "type": "boolean"
-                        },
-                        "is_premium": {
-                          "nullable": true,
-                          "type": "boolean"
-                        },
-                        "language_code": {
-                          "nullable": true,
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        }
-                      }
+                      "$ref": "#/definitions/user"
                     },
                     "caption_entities": {
                       "nullable": true,
@@ -228,89 +199,89 @@
     "contact",
     "date"
   ],
-"defintions": {
-  "messageEntityType": {
-    "type": "object",
-    "properties": {
-      "offset": {
-        "type": "integer"
-      },
-      "length": {
-        "type": "integer"
-      },
-      "url": {
-        "type": "string",
-        "format": "uri"
-      },
-      "user": {
-        "$ref": "/definitions/user"
-      },
-      "language": {
-        "type": "string"
+  "defintions": {
+    "messageEntityType": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "integer"
+        },
+        "length": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "user": {
+          "$ref": "/definitions/user"
+        },
+        "language": {
+          "type": "string"
+        }
       }
-    }
-  },
-  "user": {
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer"
-      },
-      "is_bot": {
-        "nullable": true,
-        "type": "boolean"
-      },
-      "first_name": {
-        "nullable": true,
-        "type": "string"
-      },
-      "last_name": {
-        "nullable": true,
-        "type": "string"
-      },
-      "username": {
-        "nullable": true,
-        "type": "string"
-      },
-      "language_code": {
-        "nullable": true,
-        "type": "string"
-      },
-      "can_join_groups": {
-        "nullable": true,
-        "type": "boolean"
-      },
-      "can_read_all_group_messages": {
-        "nullable": true,
-        "type": "boolean"
-      },
-      "supports_inline_queries": {
-        "nullable": true,
-        "type": "boolean"
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "is_bot": {
+          "nullable": true,
+          "type": "boolean"
+        },
+        "first_name": {
+          "nullable": true,
+          "type": "string"
+        },
+        "last_name": {
+          "nullable": true,
+          "type": "string"
+        },
+        "username": {
+          "nullable": true,
+          "type": "string"
+        },
+        "language_code": {
+          "nullable": true,
+          "type": "string"
+        },
+        "can_join_groups": {
+          "nullable": true,
+          "type": "boolean"
+        },
+        "can_read_all_group_messages": {
+          "nullable": true,
+          "type": "boolean"
+        },
+        "supports_inline_queries": {
+          "nullable": true,
+          "type": "boolean"
+        }
       }
+    },
+    "entityType": {
+      "type": "string",
+      "enum": [
+        "bold",
+        "bot_command",
+        "cashtag",
+        "code",
+        "custom_emoji",
+        "email",
+        "hashtag",
+        "italic",
+        "mention",
+        "phone_number",
+        "pre",
+        "spoiler",
+        "strikethrough",
+        "text_link",
+        "text_mention",
+        "underline",
+        "url"
+      ]
     }
-  },
-  "entityType": {
-    "type": "string",
-    "enum": [
-      "bold",
-      "bot_command",
-      "cashtag",
-      "code",
-      "custom_emoji",
-      "email",
-      "hashtag",
-      "italic",
-      "mention",
-      "phone_number",
-      "pre",
-      "spoiler",
-      "strikethrough",
-      "text_link",
-      "text_mention",
-      "underline",
-      "url"
-    ]
   }
-}
 }

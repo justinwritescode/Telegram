@@ -54,6 +54,11 @@ public partial record struct BotApiToken : IStringWithRegexValueObject<BotApiTok
 #if NET6_0_OR_GREATER
     //static string IStringWithRegexValueObject<BotApiToken>.RegexString => RegexString;
     static string IStringWithRegexValueObject<BotApiToken>.Description => Description;
+
+    string IStringWithRegexValueObject<BotApiToken>.RegexString => throw new NotImplementedException();
+
+    string IStringWithRegexValueObject<BotApiToken>.Description => throw new NotImplementedException();
+
     //public static BotApiToken ExampleValue => From(ExampleValueString);
 
 #endif
@@ -77,6 +82,7 @@ public partial record struct BotApiToken : IStringWithRegexValueObject<BotApiTok
     public static BotApiToken Parse(string s, IFormatProvider? provider) => Parse(s);
     public static bool TryParse(string? s, IFormatProvider? provider, out BotApiToken result)
         => (result = string.IsNullOrEmpty(Validate(s).ErrorMessage) ? Parse(s) : Empty) != Empty;
+    public REx Regex() => throw new NotImplementedException();
 
     public static bool operator <(BotApiToken left, BotApiToken right)
     {

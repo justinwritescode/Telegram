@@ -1,64 +1,58 @@
 {
   "type": "array",
   "items": {
-    "type": "object",
-    "properties": {
-      "info": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "object",
-            "properties": {
-              "channel_data": {
-                "type": "object",
-                "properties": {
-                  "message": {
-                    "$ref": "#/definitions/message"
-                  },
-                  "contact": {},
-                  "message_id": {
-                    "type": "integer"
-                  },
-                  "chat_id": {
-                    "type": "integer"
-                  }
-                }
-              },
-              "id": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      },
-      "service": {
-        "type": "string"
-      },
-      "title": {
-        "type": "string"
-      },
-      "bot": {
-        "type": "object",
-        "$ref": "#/definitions/bot"
-      },
-      "contact": {
-        "type": "object",
-        "$ref": "#/definitions/contact"
-      },
-      "date": {
-        "type": "integer"
-      }
-    },
-    "required": [
-      "info",
-      "service",
-      "title",
-      "bot",
-      "contact",
-      "date"
-    ]
+    "$ref": "#/definitions/sendPulseWebhookMessage"
   },
   "definitions": {
+    "sendPulseWebhookMessage": {
+      "type": "object",
+      "properties": {
+        "info": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "$ref": "#/definitions/sendPulseTelegramMessageWrapper"
+            }
+          }
+        },
+        "service": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "bot": {
+          "type": "object",
+          "$ref": "#/definitions/bot"
+        },
+        "contact": {
+          "type": "object",
+          "$ref": "#/definitions/contact"
+        },
+        "date": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "info",
+        "service",
+        "title",
+        "bot",
+        "contact",
+        "date"
+      ]
+    },
+    "sendPulseTelegramMessageWrapper": {
+      "type": "object",
+      "properties": {
+        "channel_data": {
+          "$ref": "#/definitions/channel_data"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
     "message": {
       "type": [
         "object",
@@ -162,12 +156,18 @@
         },
         "url": {
           "nullable": true,
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "uri"
         },
         "user": {
           "nullable": true,
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "$ref": "#/definitions/user"
         },
         "language": {
@@ -176,7 +176,10 @@
         },
         "custom_emoji_id": {
           "nullable": true,
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     },
@@ -221,6 +224,21 @@
         "added_to_attachment_menu": {
           "nullable": true,
           "type": "boolean"
+        }
+      }
+    },
+    "channel_data": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "$ref": "#/definitions/message"
+        },
+        "contact": {},
+        "message_id": {
+          "type": "integer"
+        },
+        "chat_id": {
+          "type": "integer"
         }
       }
     },

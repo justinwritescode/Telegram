@@ -83,10 +83,10 @@
             <summary>Provides access to the git information for the current assembly.</summary>
         </member>
         <member name="F:ThisAssembly.Git.IsDirty">
-            <summary>IsDirty: false</summary>
+            <summary>IsDirty: true</summary>
         </member>
         <member name="F:ThisAssembly.Git.IsDirtyString">
-            <summary>IsDirtyString: false</summary>
+            <summary>IsDirtyString: true</summary>
         </member>
         <member name="F:ThisAssembly.Git.RepositoryUrl">
             <summary>Repository URL: https://github.com/justinwritescode/Telegram.git</summary>
@@ -95,16 +95,16 @@
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 06f2a0b</summary>
+            <summary>Commit: 44d80e3</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 06f2a0bce6ac25fb1283d2f67f2669d3b1535fe7</summary>
+            <summary>Sha: 44d80e33d5714035dee28e2607d042b31afe32a1</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2023-01-17T00:39:09-05:00</summary>
+            <summary>Commit date: 2023-01-21T01:22:03-05:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 18</summary>
+            <summary>Commits on top of base version: 26</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -134,7 +134,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 18</summary>
+            <summary>Patch: 26</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>
